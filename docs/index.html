@@ -7,52 +7,50 @@
     <title>Tutorial Objectives and Description</title>
     <!-- Add your stylesheet link here -->
     <link rel="stylesheet" href="style.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    Your Logo Here
-                </a>
+            <a class="navbar-brand" href="#page-top">Your Logo Here</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#topic">Topic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="page-scroll" href="#topic">Topic</a></li>
-                <li><a class="page-scroll" href="#program">Program</a></li>
-                <li><a class="page-scroll" href="#speakers">Speakers</a></li>
-                <li><a class="page-scroll" href="#resources">Resources</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="brand-heading">Semantic Data Enrichment for Data Scientists</h1>
-                        <p class="intro-text">A brief description of the tutorial content.<br>More information can go here.</p>
-                        <a href="#topic" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+    <header class="intro text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4">Semantic Data Enrichment for Data Scientists</h1>
+                    <p class="lead">A brief description of the tutorial content.<br>More information can go here.</p>
+                    <a href="#topic" class="btn btn-primary btn-lg">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Topic Section -->
-    <section id="topic" class="content-section text-center">
+    <section id="topic" class="container content-section">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Topic</h2>
+            <div class="col-lg-8 offset-lg-2">
+                <h2 class="text-center">Topic</h2>
                 <p>
-                This tutorial introduces the topic of semantic data enrichment, covering theoretical and practical considerations. In particular,
-                the tutorial will provide an explanation of the role that semantics play in data enrichment for downstream AI-based applications, a review of
-                the advantages and limitations of tools, methodologies and techniques for semantic data enrichment available today, and a practical dive into
-                the creation of data transformations for enriching the data.
+                This tutorial introduces the topic of semantic data enrichment, covering theoretical and practical considerations. In particular, the tutorial will provide an explanation of the role that semantics play in data enrichment for downstream AI-based applications, a review of the advantages and limitations of tools, methodologies, and techniques for semantic data enrichment available today, and a practical dive into the creation of data transformations for enriching the data.
                 </p>
             </div>
         </div>
@@ -60,7 +58,30 @@
 
     <!-- Program Section -->
     <section id="program" class="container content-section">
-        <!-- Program details go here -->
+        <h2 class="text-center">Objectives</h2>
+        <ul>
+            <li>
+                <p>Provide evidence for the hypothesis that several semantic approaches can play an important role in supporting high-quality, controllable, scalable tabular data enrichment processes. This objective is related to proposing data enrichment as a key perspective on semantic solutions to support AI-based applications and intercept a strong demand from the market;</p>
+            </li>
+            <li>
+                <p>Present a link & extend paradigm for data enrichment as a unifying abstraction to develop semantic data enrichment solutions.</p>
+            </li>
+            <li>
+                <p>Present key aspects of semantic data enrichment, with a particular focus on:</p>
+                <ul>
+                    <li>The role of semantic annotation, especially STI and NLP solutions, by reviewing existing solutions and their limitations;</li>
+                    <li>The different phases in the design and deployment of data enrichment pipelines, from discovery to scalable deployment, and the role of algorithms, interactive tools, and web-based infrastructure in both phases;</li>
+                    <li>The role of data pipelines in meeting scalability, repeatability, and engineering constraints;</li>
+                    <li>Reasons for which semantic data enrichment is still relevant in the era of generative AI.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Provide a practical guide to creating a semantic data enrichment pipeline for real-world data enrichment tasks, by using an extensible toolkit (under development in the context of enRichMyData project) that covers key aspects of semantic enrichment.</p>
+            </li>
+            <li>
+                <p>Discuss open research questions to stimulate further research on data enrichment.</p>
+            </li>
+        </ul>
     </section>
 
     <!-- Speakers Section -->
@@ -69,17 +90,21 @@
     </section>
 
     <!-- Resources Section -->
-    <section id="resources" class="content-section text-center">
+    <section id="resources" class="container content-section text-center">
         <!-- Resources details go here -->
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white">
         <div class="container text-center">
             <p>&copy; Your Website 2024. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Include your scripts here -->
     <!-- Example: <script src="script.js"></script> -->
 </body>
