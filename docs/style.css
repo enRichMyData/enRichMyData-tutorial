@@ -1,3 +1,4 @@
+/* Navigation Styles */
 .navbar {
     background-color: #333; /* Change to match your desired navbar color */
     color: #fff;
@@ -38,7 +39,9 @@
 
 .navbar-nav a:hover {
     background-color: #444; /* Change to match your desired hover color */
-}/* Speaker Hover CSS */
+}
+
+/* Speaker Styles */
 .speaker {
     position: relative;
     width: 100%;
@@ -46,9 +49,10 @@
 }
 
 .speaker img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+    border-radius: 50%; /* Make image round */
     transition: transform .5s ease;
 }
 
@@ -95,4 +99,20 @@
 
 .social-icon:hover {
     color: #ddd;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+footer .footer-logo-placeholder {
+    width: 200px; /* Placeholder width */
+    height: 100px; /* Placeholder height */
+    background: #ddd; /* Placeholder background */
+    display: inline-block;
+    margin-bottom: 20px;
 }
