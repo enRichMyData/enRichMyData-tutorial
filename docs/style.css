@@ -116,3 +116,16 @@ footer .footer-logo-placeholder {
     display: inline-block;
     margin-bottom: 20px;
 }
+
+/* Media Section Styles */
+#media {
+    padding: 40px 0;
+}
+
+#media h2 {
+    margin-bottom: 30px;
+}
+
+.embed-responsive {
+    margin-bottom: 20px;
+}
