@@ -48,46 +48,59 @@
     margin: 0 auto;
 }
 
-.speaker img {
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
-    object-fit: cover; /* Ensure the aspect ratio is maintained */
-    border-radius: 50%; /* Make image round */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     transition: transform .5s ease;
 }
 
 .overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.7); /* Dark background with opacity */
-    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
     opacity: 0;
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.speaker:hover .overlay {
+.image-container:hover .overlay {
     visibility: visible;
     opacity: 1;
 }
 
-.text {
+.text h3, .text p {
     color: #fff;
     text-align: center;
-    transform: translateY(-50%);
-    top: 50%;
-    position: absolute;
-}
-
-.text h3, .text p {
     margin: 0;
     padding: 0;
+    display: none; /* Hide the name and title by default */
+}
+
+.image-container:hover .text h3,
+.image-container:hover .text p {
+    display: block; /* Show the name and title on hover */
+}
+
+.social-icons {
+    display: none; /* Hide social icons by default */
+}
+
+.image-container:hover .social-icons {
+    display: block; /* Show social icons on hover */
 }
 
 .social-icon {
@@ -100,6 +113,8 @@
 .social-icon:hover {
     color: #ddd;
 }
+
+ 
 
 /* Footer Styles */
 footer {
@@ -195,4 +210,38 @@ footer .footer-logo-placeholder {
         display: inline;
     }
 }
+
+
+
+
+/* Intended Audience Section Styles */
+#intended-audience {
+    padding: 50px 0;
+}
+
+#intended-audience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.audience-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.audience-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.audience-list li {
+    background-repeat: no-repeat;
+    background-position: 0 0.5em; /* Aligns the bullet appropriately */
+    background-size: 20px 20px; /* Size of the bullet image */
+    padding-left: 30px; /* Give space for the bullet image */
+    margin-bottom: 15px; /* Spacing between list items */
+    font-size: 1.1rem;
+    text-align: left; /* Align the text to the left */
+}
+
  
