@@ -129,3 +129,70 @@ footer .footer-logo-placeholder {
 .embed-responsive {
     margin-bottom: 20px;
 }
+
+
+
+
+
+/* Program Section Styles */
+#program {
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+}
+
+#program h2 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.program-detail {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program-detail h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.program-detail .program-title {
+    display: block;
+}
+
+.program-detail .duration {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.program-detail p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .program-detail .duration {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .program-detail .program-title {
+        display: inline;
+    }
+}
+ 
