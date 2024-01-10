@@ -114,8 +114,6 @@
     color: #ddd;
 }
 
- 
-
 /* Footer Styles */
 footer {
     padding: 20px 0;
@@ -144,9 +142,6 @@ footer .footer-logo-placeholder {
 .embed-responsive {
     margin-bottom: 20px;
 }
-
-
-
 
 
 /* Program Section Styles */
@@ -216,32 +211,46 @@ footer .footer-logo-placeholder {
 
 /* Intended Audience Section Styles */
 #intended-audience {
-    padding: 50px 0;
+    background-color: #f8f9fa; /* Light grey background for the section */
+    padding: 40px 0; /* Spacing around the content */
+    margin-bottom: 20px; /* Space below the section */
 }
 
-#intended-audience h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+.section-title {
+    font-size: 2rem; /* Larger font size for the title */
+    color: #333; /* Dark grey color for the title */
+    margin-bottom: 20px; /* Spacing below the title */
 }
 
-.audience-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.lead {
+    font-size: 1.25rem; /* Slightly larger font size for the subtitle */
+    color: #555; /* Medium grey color for the subtitle */
+    margin-bottom: 30px; /* Spacing below the subtitle */
 }
 
 .audience-list {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
 }
 
 .audience-list li {
-    background-repeat: no-repeat;
-    background-position: 0 0.5em; /* Aligns the bullet appropriately */
-    background-size: 20px 20px; /* Size of the bullet image */
-    padding-left: 30px; /* Give space for the bullet image */
-    margin-bottom: 15px; /* Spacing between list items */
-    font-size: 1.1rem;
-    text-align: left; /* Align the text to the left */
+    font-size: 1rem; /* Standard font size for list items */
+    color: #333; /* Dark grey color for list text */
+    padding-left: 20px; /* Space for custom bullet */
+    margin-bottom: 10px; /* Spacing between list items */
+    position: relative; /* To position the custom bullet */
+}
+
+.audience-list li::before {
+    content: ''; /* Clear content for the custom bullet */
+    position: absolute;
+    left: 0; /* Align to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Centering adjustment */
+    width: 10px; /* Width of the bullet */
+    height: 10px; /* Height of the bullet */
+    background-color: #333; /* Color of the bullet */
+    border-radius: 50%; /* Make the bullet round */
 }
 
  
